@@ -1,87 +1,167 @@
-*{
-    padding: 0;
+* {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Inter', -apple-system, sans-serif;    
+    padding: 0;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
-#main{
-    background-color: rgb(230, 228, 228);
+body {
+    background: white;
+    color: #24292f;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    text-align: center;
+}
+.hero {
+    margin-bottom: 24px;
+}
+h1.title {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+.subtitle {
+    max-width: 860px;
+    margin: 0 auto 24px;
+    color: #57606a;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.cta {
+    display: inline-block;
+    background: linear-gradient(rgb(61, 61, 61), black);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 34px;
+    align-items: stretch;
+    justify-content: center;
+}
+.card{
+    height: 100%;
     display: flex;
-    width: 100%;
-    height: 695px;
-    
-}
-h3{
-    color: #1877F2;
-    font-size: 60px;
-    font-family: 'Montserrat', sans-serif;
-}
-.block1{
-    margin-top: 200px;  
-    padding: 0 10%;
-    margin-right:5% ;
-}
-.block1 p{
-    font-size: 25px;
-    font-weight: bold;
-}
-.block2{
-    margin-top: 160px; 
-    width: 24%;
-    text-align: center;
-
-}
-.block2 p{
-    font-size: 13px;
-}
-.inputs{
-    width: 100%;
-    background-color: white;
-    padding: 10px;
-    height: 300px;
+    flex-direction: column;
+    border: 1px solid #bdbdbd;
     border-radius: 10px;
-    box-shadow:0px 2px 2px 2px rgb(154, 154, 154);
-    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(27, 31, 36, 0.5);
+}
+.price {
+    margin-top: 20px;
+    font-family: "Mona Sans";
+    margin-bottom: 10px;
+}
+.pum {
 
+    position: relative; 
+    top: -0.5em;
 }
-.inputs hr{
-    color: rgb(154, 154, 154);
+.price-num {
+    font-size: 48px;
+    font-weight: 600;;
 }
-.inputs input{
-    padding: 14px;
-    margin: 5px 0;  
-    width: 90%;
-    border: 1px solid rgb(154, 154, 154);
-    border-radius: 20px;
+.price sup{
+    color: rgb(130, 130, 130);
+    font-family: "Mona Sans";
+    font-size: 20px;
+    position: relative;
+    top: -0.9em;
+    padding-right:4px;
 }
-.inputs button{
-    padding: 10px 5px;  
-    margin: 5px 0;
-    background-color: #1877F2;
-    color: white;
-    font-weight: bold;
-    border: #1877F2;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
+.price sub{
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: -0.2em;
+    padding: 0 5px;
 }
-.login{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 19px
-}
-.block2 a.missing_passw{
+.button a{
     text-decoration: none;
     display: block;
-    margin-top: 10px;
-    font-size: 13px;
-    color: #1877F2;
-    font-weight: bold;
-
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
-.inputs .new_acc{
-    margin-top: 20px;
-    background-color: rgb(69, 189, 69);
-    width: 65%;
-    height: 60px;
-    font-size: 15px;
+.button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+.black-button {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: linear-gradient(rgb(61, 61, 61), black);
+    color: white;
+    margin-bottom: 44px;
+}
+.white-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(142, 142, 142);
+    text-decoration: none;
+    margin-bottom: 44px;
+}
+
+details { 
+    border: 0; 
+}
+.details-list {
+    text-align: left;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 14px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2d333b;
+    padding: 4px 0;
+}
+
+summary::before {
+    content: "›";
+    transform: translateY(-1px);
+    color: #57606a;
+    font-size: 18px;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.detail-body {
+    color: #57606a;
+    padding: 6px 0 4px 20px;
+    line-height: 1.5;
+    font-size: 14px;
 }
