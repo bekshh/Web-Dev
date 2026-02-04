@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', -apple-system, sans-serif;    
+}
+#main{
+    background-color: rgb(230, 228, 228);
+    display: flex;
+    width: 100%;
+    height: 695px;
+    
+}
+h3{
+    color: #1877F2;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+.block1{
+    margin-top: 200px;  
+    padding: 0 10%;
+    margin-right:5% ;
+}
+.block1 p{
+    font-size: 25px;
+    font-weight: bold;
+}
+.block2{
+    margin-top: 160px; 
+    width: 24%;
+    text-align: center;
+
+}
+.block2 p{
+    font-size: 13px;
+}
+.inputs{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow:0px 2px 2px 2px rgb(154, 154, 154);
+    margin-bottom: 20px;
+
+}
+.inputs hr{
+    color: rgb(154, 154, 154);
+}
+.inputs input{
+    padding: 14px;
+    margin: 5px 0;  
+    width: 90%;
+    border: 1px solid rgb(154, 154, 154);
+    border-radius: 20px;
+}
+.inputs button{
+    padding: 10px 5px;  
+    margin: 5px 0;
+    background-color: #1877F2;
+    color: white;
+    font-weight: bold;
+    border: #1877F2;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.login{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 19px
+}
+.block2 a.missing_passw{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #1877F2;
+    font-weight: bold;
+
+}
+.inputs .new_acc{
+    margin-top: 20px;
+    background-color: rgb(69, 189, 69);
+    width: 65%;
+    height: 60px;
+    font-size: 15px;
+}
