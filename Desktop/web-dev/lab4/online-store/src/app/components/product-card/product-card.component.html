@@ -1,0 +1,37 @@
+<div class="card">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+  
+    <h2>{{ product.name }}</h2>
+  
+    <p class="description">
+      {{ product.description }}
+    </p>
+  
+    <p class="price">
+      {{ product.price | number }} KZT
+    </p>
+  
+    <p class="rating">
+      <svg xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 24 24"
+           width="18"
+           height="18"
+           fill="#FFC107"
+           class="star-icon">
+        <path d="M12 .587l3.668 7.431L24 9.587l-6 5.845
+                 1.417 8.263L12 18.896l-7.417 4.799L6 15.432
+                 0 9.587l8.332-1.569z"/>
+      </svg>
+      {{ product.rating }}
+    </p>
+  
+    <div class="actions">
+      <a [href]="product.link" target="_blank" class="btn">
+        View on Kaspi
+      </a>
+  
+      <button (click)="shareProduct()" class="btn share">
+        Share
+      </button>
+    </div>
+  </div>
