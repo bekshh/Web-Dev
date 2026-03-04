@@ -1,0 +1,10 @@
+@if (products().length === 0) {
+  <p>No products in this category</p>
+}
+
+@for (product of products(); track product.id) {
+  <app-product-item
+    [product]="product"
+    (delete)="onDelete($event)">
+  </app-product-item>
+}
