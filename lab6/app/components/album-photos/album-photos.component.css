@@ -1,0 +1,15 @@
+.photos{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,150px);
+    gap:15px;
+  }
+  
+  .photo{
+    text-align:center;
+  }
+  
+  .photo img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+  }
